@@ -83,7 +83,20 @@ async function input(event)
 <input id="search" type="text" onChange={(event)=>{input(event)}}/>
 <button  onClick={search}>Search</button>
 </div>
-      
+
+<div className="input-group"  >
+  <div className="form-outline" data-mdb-input-init>
+    <input id="search-input search" type="search"  className="form-control" onChange={(event)=>{input(event)}}/>
+    <label className="form-label" for="form1">Search</label>
+  </div>
+  <button id="search-button" type="button" className="btn btn-primary" onClick={search}>
+    <i className="fas fa-search"></i>
+  </button>
+</div>
+
+
+
+
       <table className="table table-bordered">
         {products.map((v) => {
           // else

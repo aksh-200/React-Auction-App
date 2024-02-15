@@ -177,12 +177,14 @@ function Signup() {
           // width: "100%",
         }}
       >
-        <h3 className="text-center" style={{color:"white"}}>You can Register as Seller or Bidder</h3>
-        <h4 className="text-center" >
-          <Link to="bidder_registration" className="link px-3" style={{color:"white"}}>
+        {/* <h3 className="text-center" style={{color:"black"}}>You can Register as Seller or Bidder</h3> */}
+        <h4 className="text-center pt-5" >
+          <Link to="bidder_registration" className="link px-3 btn-grad " style={{color:"black", fontSize:"30px"}}>
             Register as Bidder
           </Link>
-          <Link to="seller_registration" className="link px-3"  style={{color:"white"}}>
+
+          
+          <Link to="seller_registration" className="link px-3 btn-grad"  style={{color:"black" , fontSize:"30px"}}>
             Register as Seller
           </Link>
         </h4>

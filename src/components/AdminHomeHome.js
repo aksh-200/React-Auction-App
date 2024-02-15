@@ -9,6 +9,7 @@ export default function AdminHomeHome() {
   }, []);
   const navigate = useNavigate();
   const [biddings, setBiddings] = useState([]);
+  console.log(biddings)
 
   return (
     <div>
@@ -19,6 +20,58 @@ export default function AdminHomeHome() {
       </h1>
       <table className="table table-bordered">
         {biddings.map((v) => {
+          
+
+
+           if(v.bidder_id == null)
+           {
+
+
+            return (
+              <tr>
+                <td>
+                  Product Name:{v.p_Id.product_name}
+                  <br />
+                  Product Name:{v.p_Id.category_id.category_name}
+                  <br />
+                  Product Description:{v.p_Id.desciption}
+                  <br />
+                  Seller Name:{" "}
+                  {v.p_Id.seller_id.fname + " " + v.p_Id.seller_id.lname}
+                  <br />
+                  Base Price: {v.p_Id.base_price}
+                  <br />
+                </td>
+                <td width={280} height={200}>
+                  <img
+                    className="d-block"
+                    src={`data:image/png;base64,${v && v.p_Id.product_image_3}`}
+                    width="280"
+                    height="200"
+                    alt="Third slide"
+                  />
+                </td>
+                <td>
+                <h6>No one put Bid</h6>
+                </td>
+              </tr>
+            );
+           }
+            
+
+            else{
+
+
+
+
+
+
+
+
+
+
+
+
           return (
             <tr>
               <td>
@@ -62,6 +115,8 @@ export default function AdminHomeHome() {
               </td>
             </tr>
           );
+                
+        }
         })}
       </table>
     </div>

@@ -7,16 +7,19 @@ function Home() {
       <br />
       <br />
       <div
+      className="homepagelineargradientbackground"
         style={{
-          backgroundColor: "gray",
-          opacity: 0.6,
+          // backgroundColor: "gray",
+          opacity: 0.9,
           width: "50%",
           padding: "30px",
           marginLeft: "35px",
+          color:"black"
+          
         }}
       >
         <h1 style={{ padding: "20px" }}>
-          <span style={{color:"##FFFFFF"}}>Bid, Win, Repeat - Your go-to destination for online auctions.</span>
+        Bid, Win, Repeat - Your go-to destination for online auctions.
         </h1>
         <h3>You can Register as Seller as well as bidder.</h3>
         <h3>

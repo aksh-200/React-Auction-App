@@ -37,17 +37,19 @@ import Forget from "./components/Forgot";
 
 function App() {
   const mystate = useSelector((state) => state.logged);
+  const absoluteurl = "http://localhost:3000/"
   return (
     <div className="App">
       <header>
         <div style={{ display: mystate.loggedIn ? "none" : "block" }}>
-          <Navbar bg="primary" variant="dark">
-            <Container>
-              <Navbar.Brand href="#home">Auction App</Navbar.Brand>
-              <Nav className="me-auto">
-                <Nav.Link href="home">Home</Nav.Link>
-                <Nav.Link href="login">LogIn</Nav.Link>
-                <Nav.Link href="signup">SignUp</Nav.Link>
+          <Navbar bg="primary" variant="dark" >
+            <Container className="">
+         <Navbar.Brand href="#home" className="Brandlinks me-5">E-Antique - (Antique Products Auction) </Navbar.Brand>
+
+              <Nav className="me-auto  navbarlink">
+                <Nav.Link href= {absoluteurl + "home"} className="links" >Home</Nav.Link>
+                <Nav.Link href={absoluteurl + "login"} className="links" >LogIn</Nav.Link>
+                <Nav.Link href={absoluteurl + "signup"} className="links">SignUp</Nav.Link>
               </Nav>
             </Container>
           </Navbar>

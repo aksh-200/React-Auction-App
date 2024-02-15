@@ -143,5 +143,68 @@ tr {
 .lineargradientbackground{
 
 
-  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);}
+
+
+
+.homepagelineargradientbackground{
+
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+         
+.btn-grad {
+  background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%);
+  margin: 10px;
+  padding: 10px 25px;
+
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display:inline-block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.navbarlink
+{
+ 
+  font-size: larger;
+  margin-left: 400px;
+  
+}
+
+.links{
+  
+  margin-right: 25px;
+}
+
+.Brandlinks
+{ 
+  font-size:10px;
+   margin-right: 100px;
+
 }
