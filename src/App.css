@@ -208,3 +208,34 @@ tr {
    margin-right: 100px;
 
 }
+
+
+.div  
+{  
+    background-color:red;  
+    color:white;  
+    border: 1px solid;  
+}  
+#parent  
+{  
+    border:1px solid #ccc;  
+    text-align: center;  
+    height:150px;  
+    width:400px;  
+}  
+
+
+
+#div2  
+{  
+   display: inline;  
+}  
+#div3  
+{  
+    float:right;  
+}  
+#div1  
+{  
+float:left;  
+}  
+

@@ -62,12 +62,13 @@ async function input(event)
 
   return (
     <div>
-      <h2 className="text-center" style={{ backgroundColor: "white" }}>
-        Products
-      </h2>
 
 
-      <select name="category_id"  onChange={(e)=>filter(e)}>
+<div class="container">
+  <div class="row  mt-3" >
+    <div class="col-sm">
+
+  <select name="category_id"  className="form-select" aria-label="Default select example" onChange={(e)=>filter(e)}>
   <option value="0">All</option>      
   <option value="1">antique</option>
   <option value="2">painting</option>
@@ -79,20 +80,80 @@ async function input(event)
   <option value="8">other</option>
 
 </select>
-<div>
-<input id="search" type="text" onChange={(event)=>{input(event)}}/>
-<button  onClick={search}>Search</button>
-</div>
+    </div>
 
-<div className="input-group"  >
-  <div className="form-outline" data-mdb-input-init>
+
+
+    <div class="col-sm ">
+    <h2 className="text-center" style={{ backgroundColor: "white" }}>
+        Products
+      </h2>
+    </div>
+
+
+    <div class="col-sm ms-3">
+    <div className="input-group"  >
+  <div className="form-outline" data-mdb-input-init style={{ backgroundColor: "white" }}>
     <input id="search-input search" type="search"  className="form-control" onChange={(event)=>{input(event)}}/>
     <label className="form-label" for="form1">Search</label>
   </div>
   <button id="search-button" type="button" className="btn btn-primary" onClick={search}>
-    <i className="fas fa-search"></i>
+    <i className="fas fa-search"> Search</i>
   </button>
 </div>
+    </div>
+
+    
+  </div>
+</div>
+ 
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <h2 className="text-center" style={{ backgroundColor: "white" }}>
+        Products
+      </h2> */}
+
+{/* 
+      <select name="category_id"  onChange={(e)=>filter(e)}>
+  <option value="0">All</option>      
+  <option value="1">antique</option>
+  <option value="2">painting</option>
+  <option value="3">artefact</option>
+  <option value="4">furniture</option>
+  <option value="5">comics or cards limited edition</option>
+  <option value="6">sports memorabilia</option>
+  <option value="7">Signed Memorabilia</option>
+  <option value="8">other</option>
+
+</select> */}
+{/* <div>
+<input id="search" type="text" onChange={(event)=>{input(event)}}/>
+<button  onClick={search}>Search</button>
+// </div> */}
+
+{/* // <div className="input-group"  >
+//   <div className="form-outline" data-mdb-input-init>
+//     <input id="search-input search" type="search"  className="form-control" onChange={(event)=>{input(event)}}/>
+//     <label className="form-label" for="form1">Search</label>
+//   </div>
+//   <button id="search-button" type="button" className="btn btn-primary" onClick={search}>
+//     <i className="fas fa-search"></i>
+//   </button>
+// </div> */}
 
 
 

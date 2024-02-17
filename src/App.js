@@ -42,9 +42,11 @@ function App() {
     <div className="App">
       <header>
         <div style={{ display: mystate.loggedIn ? "none" : "block" }}>
+          {/* <Navbar className="shadow p-3 mb-5 bg-white rounded"> */}
+
           <Navbar bg="primary" variant="dark" >
             <Container className="">
-         <Navbar.Brand href="#home" className="Brandlinks me-5">E-Antique - (Antique Products Auction) </Navbar.Brand>
+         <Navbar.Brand href="#home" className="Brandlinks me-5"><h2>E-Antique</h2>  <pre>  </pre><h5>  (Antique Products Auction)</h5> </Navbar.Brand>
 
               <Nav className="me-auto  navbarlink">
                 <Nav.Link href= {absoluteurl + "home"} className="links" >Home</Nav.Link>
